@@ -82,15 +82,15 @@
                 
        		default_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    Q    |    W    |    F    |    P    |    B    |               |    J    |    L    |    U    |    Y    |    BSPC    |
+// |    Q    |    W    |    F    |    P    |    B    |               |    J    |    L    |    U    |    Y    |    BSPC |
 // |    A    |    R    |    S    |    T    |    G    |               |    M    |    N    |    E    |    I    |    O    |
 // |    Z    |    X    |    C    |    D    |    V    |               |    K    |    H    |    ,    |    .    |    /    |
-//                               |   SPC   |   LSFT  |               |   L1    |  BSPC   |
+//                               |   LSFT  |   SPC  |                |   BSPC    |  L1   |
 		bindings = <
 		&hm ESC Q 	&kp W   &kp F   &kp P   	&kp B 					&kp J   &kp L   	&kp U       	&kp Y			&kp BSPC
 		&hm TAB A	&kp R   &kp S   &kp T       &kp G 			        &kp M   &kp N       &kp E       	&kp I   		&hm ENTER O
 		&kp Z       &kp X   &kp C   &kp D   	&kp V				    &kp K   &kp H   	&hm SLASH CMMA	&hm EXCL DOT 	&hm EQUAL SEMI
-          				            &kp SPC &kp LSFT  				    &to NUMBER_L &kp BSPC 
+          				            &kp LSFT     &kp SPC  				&kp BSPC    &to NUMBER_L  
 		>;
 		};
 
@@ -99,12 +99,12 @@
 // |   ESC   |    ~    |    E    |    E    |    E    |               |    (    |    )    |    =    |    >    |    <    |
 // |    1    |    2    |    3    |    4    |    5    |               |    6    |    7    |    8    |    9    |    0    |
 // |   TAB   |    E    |    E    |    E    |    E    |               |    E    |    E    |    E    |    L3   |    L2   |
-//                               |   L0    |   LSFT  |               |   L1    |  BSPC   |
+//                               |   LSFT  |   L0    |               |   LCTRL |  L1   |
 		bindings = <
 		&kp ESC    &kp TILDE    &kp E       &kp E       &kp E	        &kp LPRN &kp RPRN &kp EQUAL &kp RBKT  &kp DEL 
 		&kp N1     &kp N2       &kp N3      &kp N4      &kp N5  		&kp N6    &kp N7    &kp N8   &kp N9    &kp N0 
 		&kp TAB    &kp E        &kp E       &kp E       &kp E 		    &kp LBRC &kp RBRC   &kp E &kp E  &to NAV_L
-					        &to DEFAULT  &kp LSFT  					&to NUMBER_L &kp BSPC  
+					            &kp LSFT     &kp SPC  				    &kp LCTRL    &to NUMBER_L   
 		>;
 		};
 		
@@ -112,13 +112,13 @@
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // |    2    |    2    |    2    |    2    |    2    |               |    HOME |    END  |    2    |    2    |    2    |
 // |    2    |    2    |    2    |    2    |    2    |               |    LEFT |    DOWN |    UP   | RIGHT   |  GRAVE  |
-// |    2    |    2    |    2    |    2    |    2    |               |    E    |    E    |    -    |    L3   |    L2   |
-//                               |   L0    |   LSFT  |               |   L1    |  BSPC   |
+// |    2    |    2    |    2    |    2    |    2    |               |    E    |    E    |    E    |    E    |    L2   |
+//                               |   LSFT  |   L0    |               |   LCTRL |    L1   |
 		bindings = <
 		&kp 2  &kp 2 &kp 2  &kp 2  &kp 2    			&kp HOME    &kp END     &kp 2   &kp LPRN    &kp RPRN 
 		&kp 2  &kp 2 &kp 2  &kp 2  &kp 2    		    &kp LEFT    &kp DOWN    &kp UP  &kp RIGHT   &kp GRAVE
 		&kp 2  &kp 2 &kp 2  &kp 2  &kp 2 			    &kp E       &kp E       &kp E   &kp E       &kp NAV_L
-					&to DEFAULT  &kp LSFT  				&to NUMBER_L &kp BSPC 
+					&kp LSFT     &kp SPC  				&kp LCTRL    &to NUMBER_L  
 		>;
 		};
 	};
