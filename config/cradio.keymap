@@ -52,26 +52,26 @@
 // |    A    |    R    |    S    |    T    |    G    |               |    M    |    N    |    E    |    I    |    O    |
 // |    Z    |    X    |    C    |    D    |    V    |               |    K    |    H    |    ,    |    .    |    /    |
 //                               |   LSFT  |   SPC  |                |   BSPC    |  L1   |
-		bindings = <
-    &hm ESC Q 	&kp W           &kp F       &kp P   	&kp B 				&kp J   &kp L   	&kp U       	&kp Y			&hm LC(BSPC) LCTRL
-    &hm TAB A	&kp R           &kp S       &kp T       &kp G 			    &kp M   &kp N       &kp E       	&kp I   		&hm ENTER O
-    &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C &kp D   	&hm LC(V) V         &kp K   &kp H   	&hm SLASH CMMA	&hm EXCL DOT 	&hm SLASH QMARK
-          				            &kp LSFT     &kp SPC  				    &kp BSPC    &to NUMBER_L  
-		>;
+        bindings = <
+        &hm ESC Q 	&kp W           &kp F       &kp P   	&kp B 				&kp J   &kp L   	&kp U       	&kp Y			&hm LC(BSPC) LCTRL
+        &hm TAB A	&kp R           &kp S       &kp T       &kp G 			    &kp M   &kp N       &kp E       	&kp I   		&hm ENTER O
+        &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C &kp D   	&hm LC(V) V         &kp K   &kp H   	&hm SLASH CMMA	&hm EXCL DOT 	&hm SLASH QMARK
+                                        &kp LSFT     &kp SPC  				    &kp BSPC    &to NUMBER_L  
+            >;
 		};
 
         numbers_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // |   ESC   |    ~    |    E    |    E    |    E    |               |    (    |    )    |    =    |    >    | LCTRL   |
 // |    4    |    2    |    3    |    1    |    5    |               |    6    |    0    |    8    |    9    |    7    |
-// |    Z    |    X    |    C    |    E    |    E    |               |    MINUS|    E    |    L4   |    L3   |    L2   |
+// |    Z    |    X    |    C    |    E    |    E    |               |    MINUS|    '    |    ""   |    L3   |    L2   |
 //                               |   LSFT  |   L0    |               |   BSPC |  L1   |
-		bindings = <
-		&kp ESC    &kp TILDE    &kp E       &kp E       &kp E	                &kp LPRN    &kp RPRN    &kp EQUAL   &kp GT              &hm LC(BSPC) LCTRL
-		&kp N4     &kp N2       &kp N3      &kp N1      &kp N5  		        &kp N6      &kp N0      &kp N8      &kp N9              &kp N7 
-        &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C    &kp E       &kp E 		    &kp MINUS    &kp MINUS    &kp MINUS       &to QWERTY_L  &to NAV_L
-					                &kp LSFT     &to DEFAULT  				    &kp BSPC    &to NUMBER_L   
-		>;
+            bindings = <
+            &kp ESC    &kp TILDE    &kp E       &kp E       &kp E	                &kp LPRN    &kp RPRN    &kp EQUAL   &kp GT              &hm LC(BSPC) LCTRL
+            &kp N4     &kp N2       &kp N3      &kp N1      &kp N5  		        &kp N6      &kp N7      &kp N8      &kp N9              &kp N0 
+            &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C    &kp E       &hm LC(V) V 		    &kp MINUS    &kp SQT    &kp DOUBLE_QUOTES       &to QWERTY_L  &to NAV_L
+                                        &kp LSFT     &to DEFAULT  				    &kp BSPC    &to NUMBER_L   
+            >;
 		};
 		
 		nav_layer {
@@ -80,27 +80,26 @@
 // |    2    |    2    |    2    |    2    |    2    |               |    LEFT |    DOWN |    UP   | RIGHT   |  GRAVE  |
 // |    Z    |    X    |    C    |    2    |    2    |               |    E    |    E    |    E    |    L3   |    L2   |
 //                               |   LSFT  |   L0    |               |   BSPC |    L1   |
-		bindings = <
-		&kp 2  &kp 2 &kp 2  &kp 2  &kp 2    			&kp HOME    &kp END     &kp 2   &kp 2     &hm LC(BSPC) LCTRL 
-		&kp 2  &kp 2 &kp 2  &kp 2  &kp 2    		    &kp LEFT    &kp DOWN    &kp UP  &kp RIGHT    &kp GRAVE
-		&hm LC(Z) Z &hm LC(X) X     &hm LC(C) C  &kp 2  &kp 2 			    &kp E       &kp E       &kp E   &to QWERTY_L &to NAV_L
-					&kp LSFT     &to DEFAULT  				&kp BSPC    &to NUMBER_L  
-		>;
+            bindings = <
+            &kp 2  &kp 2 &kp 2  &kp 2  &kp 2    			&kp HOME    &kp END     &kp 2   &kp 2     &hm LC(BSPC) LCTRL 
+            &kp 2  &kp 2 &kp 2  &kp 2  &kp 2    		    &kp LEFT    &kp DOWN    &kp UP  &kp RIGHT    &kp GRAVE
+            &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C  &kp 2  &hm LC(V) V 			    &kp E       &kp E       &kp E   &to QWERTY_L &to NAV_L
+                        &kp LSFT     &to DEFAULT  				&kp BSPC    &to NUMBER_L  
+            >;
 		};  
+
         qwerty_layer {
-    // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    // |    Q    |    W    |    E    |    R    |    T    |               |    Y      |    U  |    I    |    O    |    P    |
-    // |    2    |    2    |    2    |    2    |    2    |               |    H |    J |    K   | L   |  ;  |
-    // |    2    |    2    |    2    |    2    |    2    |               |    N    |    M    |    ,    |   .    |    /   |
-    //                               |   LSFT  |   L0    |               |   BSPC |    L1   |
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |    Q    |    W    |    E    |    R    |    T    |               |    Y      |    U  |    I    |    O    |    P    |
+// |    2    |    2    |    2    |    2    |    2    |               |    H |    J |    K   | L   |  ;  |
+// |    2    |    2    |    2    |    2    |    2    |               |    N    |    M    |    ,    |   .    |    /   |
+//                               |   LSFT  |   L0    |               |   BSPC |    L1   |
             bindings = <
             &kp Q  &kp W &kp E  &kp R  &kp T    			&kp Y    &kp U     &kp O   &kp O    &kp P 
-            &kp A  &kp S &kp D  &kp F  &kp G    		    &kp H    &kp J    &kp K  &kp L   &kp ;
-            &kp Z  &kp X &kp C  &kp V  &kp B 			    &kp N       &kp M       &kp ,   &kp .       &kp /
+            &kp A  &kp S &kp D  &kp F  &kp G    		    &kp H    &kp J    &kp K  &kp L   &kp SEMI
+             &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C  &hm LC(V) V  &kp B 			    &kp N       &kp M       &kp COMMA   &kp DOT       &kp FSLH
                         &kp LSFT    &kp SPC   				&kp BSPC    &to NUMBER_L  
             >;
-            };  
-
-        
+        };  
 	};
 };
