@@ -73,15 +73,15 @@
                                         &sk LSHIFT     &to DEFAULT  				    &kp BSPC    &to NUMBER_L   
             >;
 		};
-		
+		 
 		nav_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    2    |    2    |    2    |    2    |    2    |               |    HOME |    END  |    PG_UP    |    2    |    2    |
+// |    ALT   |    TAB    |    2    |    2    |    2    |               |    HOME |    END  |    PG_UP    |    2    |    2    |
 // |    Spotify(L)    |    Spotify(D)    |    Spotify(R)    |    2    |    2    |               |    LEFT |    DOWN |    UP   | RIGHT   |  GRAVE  |
 // |    Z    |    X    |    C    |    2    |    2    |               |    E    |    E    |    E    |    L3   |    L2   |
 //                               |   LSFT  |   L0    |               |   BSPC |    L1   |
             bindings = <
-            &kp 2  &kp 2 &kp 2  &kp 2  &kp 2    			&hm LC(HOME) HOME    &hm LC(END) END     &kp PG_UP   &kp PG_UP     &hm LC(BSPC) LCTRL 
+            &kp LALT  &kp TAB &kp 2  &kp 2  &kp 2    			&hm LC(HOME) HOME    &hm LC(END) END     &kp PG_UP   &kp PG_UP     &hm LC(BSPC) LCTRL 
             &kp LC(LA(LEFT))  &kp LC(LA(DOWN)) &kp LC(LA(RIGHT))  &kp 2  &kp 2    		    &kp LEFT    &kp DOWN    &kp UP  &kp RIGHT    &kp GRAVE
             &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C  &kp 2  &hm LC(V) V 			    &kp E       &kp E       &kp E   &to QWERTY_L &to NAV_L
                         &sk LSHIFT     &to DEFAULT  				&kp BSPC    &to NUMBER_L  
