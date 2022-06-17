@@ -55,8 +55,8 @@
         bindings = <
         &hm ESC Q 	&kp W           &kp F       &kp P   	&kp B 				&kp J   &kp L   	&kp U       	&kp Y			&hm SQT SEMICOLON
         &hm TAB A	&hm LCTRL  R           &kp S       &kp T       &kp G 			    &kp M   &kp N       &kp E       	&kp I   		&hm ENTER O
-        &hm LC(Z) Z &hm LC(X) X     &hm LC(X) C &kp D   	&hm LC(V) V         &kp K   &kp H   	&hm SLASH CMMA	&hm EXCL DOT 	&hm SLASH QMARK
-                                        &kp LSFT     &kp SPC  				    &kp BSPC    &to NUMBER_L  
+        &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C &kp D   	&hm LC(V) V         &kp K   &kp H   	&hm SLASH CMMA	&hm EXCL DOT 	&hm SLASH QMARK
+                                        &sk LSHIFT     &kp SPC  				    &kp BSPC    &to NUMBER_L  
             >;
 		};
 
@@ -70,21 +70,21 @@
             &kp ESC    &kp TILDE    &kp E       &kp E       &kp E	                &kp LPRN    &kp RPRN    &kp EQUAL   &kp GT              &hm LC(BSPC) LCTRL
             &kp N4     &kp N2       &kp N3      &kp N1      &kp N5  		        &kp N6      &kp N7      &kp N8      &kp N9              &kp N0 
             &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C    &kp E       &hm LC(V) V 		    &kp MINUS    &kp SQT    &kp DOUBLE_QUOTES       &to QWERTY_L  &to NAV_L
-                                        &kp LSFT     &to DEFAULT  				    &kp BSPC    &to NUMBER_L   
+                                        &sk LSHIFT     &to DEFAULT  				    &kp BSPC    &to NUMBER_L   
             >;
 		};
 		
 		nav_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    2    |    2    |    2    |    2    |    2    |               |    HOME |    END  |    2    |    2    |    2    |
-// |    2    |    2    |    2    |    2    |    2    |               |    LEFT |    DOWN |    UP   | RIGHT   |  GRAVE  |
+// |    2    |    2    |    2    |    2    |    2    |               |    HOME |    END  |    PG_UP    |    2    |    2    |
+// |    Spotify(L)    |    Spotify(D)    |    Spotify(R)    |    2    |    2    |               |    LEFT |    DOWN |    UP   | RIGHT   |  GRAVE  |
 // |    Z    |    X    |    C    |    2    |    2    |               |    E    |    E    |    E    |    L3   |    L2   |
 //                               |   LSFT  |   L0    |               |   BSPC |    L1   |
             bindings = <
-            &kp 2  &kp 2 &kp 2  &kp 2  &kp 2    			&kp HOME    &kp END     &kp 2   &kp 2     &hm LC(BSPC) LCTRL 
-            &kp 2  &kp 2 &kp 2  &kp 2  &kp 2    		    &kp LEFT    &kp DOWN    &kp UP  &kp RIGHT    &kp GRAVE
+            &kp 2  &kp 2 &kp 2  &kp 2  &kp 2    			&hm LC(HOME) HOME    &hm LC(END) END     &kp PG_UP   &kp PG_UP     &hm LC(BSPC) LCTRL 
+            &kp LC(LA(LEFT))  &kp LC(LA(DOWN)) &kp LC(LA(RIGHT))  &kp 2  &kp 2    		    &kp LEFT    &kp DOWN    &kp UP  &kp RIGHT    &kp GRAVE
             &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C  &kp 2  &hm LC(V) V 			    &kp E       &kp E       &kp E   &to QWERTY_L &to NAV_L
-                        &kp LSFT     &to DEFAULT  				&kp BSPC    &to NUMBER_L  
+                        &sk LSHIFT     &to DEFAULT  				&kp BSPC    &to NUMBER_L  
             >;
 		};  
 
@@ -98,7 +98,7 @@
             &kp Q  &kp W &kp E  &kp R  &kp T    			&kp Y    &kp U     &kp O   &kp O    &kp P 
             &kp A  &kp S &kp D  &kp F  &kp G    		    &kp H    &kp J    &kp K  &kp L   &kp SEMI
              &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C  &hm LC(V) V  &kp B 			    &kp N       &kp M       &kp COMMA   &kp DOT       &kp FSLH
-                        &kp LSFT    &kp SPC   				&kp BSPC    &to NUMBER_L  
+                        &sk LSHIFT    &kp SPC   				&kp BSPC    &to NUMBER_L  
             >;
         };  
 	};
