@@ -32,6 +32,14 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N1>, <&kp N2>, <&kp N3>;
+        };
     };
 
     combos {
@@ -56,7 +64,7 @@
         &hm ESC Q 	&kp W           &kp F       &kp P   	&kp B 				&kp J   &kp L   	&kp U       	&kp Y			&hm SQT SEMICOLON
         &hm TAB A	&hm LCTRL  R    &kp S       &kp T       &kp G 			    &kp M   &kp N       &kp E       	&kp I   		&kp O
         &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C &kp D   	&hm LC(V) V         &kp K   &kp H   	&hm SLASH CMMA	&hm EXCL DOT 	&hm ENTER QMARK
-                                        &sk LSHIFT     &kp SPC  				    &kp BSPC    &to NUMBER_L  
+                                        &sk LSHIFT     &kp SPC  				    &td0 BSPC LC(BSPC) LS(DEL)   &to NUMBER_L  
             >;
 		};
 
