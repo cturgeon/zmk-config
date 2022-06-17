@@ -54,8 +54,8 @@
 //                               |   LSFT  |   SPC  |                |   BSPC    |  L1   |
         bindings = <
         &hm ESC Q 	&kp W           &kp F       &kp P   	&kp B 				&kp J   &kp L   	&kp U       	&kp Y			&hm SQT SEMICOLON
-        &hm TAB A	&hm LC(C) R           &kp S       &kp T       &kp G 			    &kp M   &kp N       &kp E       	&kp I   		&hm ENTER O
-        &hm LC(Z) Z &hm LC(X) X     &kp C &hm LCTRL D   	&hm LC(V) V         &kp K   &kp H   	&hm SLASH CMMA	&hm EXCL DOT 	&hm SLASH QMARK
+        &hm TAB A	&hm LCTRL  R           &kp S       &kp T       &kp G 			    &kp M   &kp N       &kp E       	&kp I   		&hm ENTER O
+        &hm LC(Z) Z &hm LC(X) X     &hm LC(X) C &kp D   	&hm LC(V) V         &kp K   &kp H   	&hm SLASH CMMA	&hm EXCL DOT 	&hm SLASH QMARK
                                         &kp LSFT     &kp SPC  				    &kp BSPC    &to NUMBER_L  
             >;
 		};
