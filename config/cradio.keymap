@@ -44,7 +44,7 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_esc {
+        combo_esc { 
             timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
@@ -77,19 +77,19 @@
             bindings = <
             &kp ESC    &kp TILDE    &kp E       &kp E       &kp E	                &kp LPRN    &kp RPRN    &kp EQUAL   &kp GT              &hm LC(BSPC) LCTRL
             &kp N4     &kp N2       &kp N3      &kp N1      &kp N5  		        &kp N6      &kp N7      &kp N8      &kp N9              &kp N0 
-            &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C    &kp E       &hm LC(V) V 		    &kp MINUS    &kp SQT    &kp DOUBLE_QUOTES       &to QWERTY_L  &to NAV_L
+            &kp LC(Z) &kp LC(X)     &kp LC(C)    &kp E       &kp LC(V) 		    &kp MINUS    &kp SQT    &kp DOUBLE_QUOTES       &to QWERTY_L  &to NAV_L
                                         &sk LSHIFT     &to DEFAULT  				    &kp BSPC    &to NUMBER_L   
             >;
 		};
 		 
 		nav_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    ALT   |    TAB    |    2    |    2    |    2    |               |    HOME |    END  |    PG_UP    |    2    |    2    |
+// |    ALT   |    TAB    |    2    |    2    |    BT   |               |    HOME |    END  |    PG_UP    |    2    |    2    |
 // |    Spotify(L)    |    Spotify(D)    |    Spotify(R)    |    2    |    2    |               |    LEFT |    DOWN |    UP   | RIGHT   |  GRAVE  |
-// |    Z    |    X    |    C    |    2    |    2    |               |    E    |    E    |    E    |    L3   |    L2   |
+// |    Z    |    X    |    C    |    2    |    V    |               |    E    |    E    |    E    |    L3   |    L2   |
 //                               |   LSFT  |   L0    |               |   BSPC |    L1   |
             bindings = <
-            &kp LALT  &kp TAB &kp 2  &kp 2  &kp 2    			&hm LC(HOME) HOME    &hm LC(END) END     &kp PG_UP   &kp PG_UP     &hm LC(BSPC) LCTRL 
+            &kp LALT  &kp TAB &kp LC(LA(LG(1)))  &kp LC(LA(LG(2)))  &bt BT_NXT    			&hm LC(HOME) HOME    &hm LC(END) END     &kp PG_UP   &kp PG_UP     &hm LC(BSPC) LCTRL 
             &kp LC(LA(LEFT))  &kp LC(LA(DOWN)) &kp LC(LA(RIGHT))  &kp 2  &kp 2    		    &kp LEFT    &kp DOWN    &kp UP  &kp RIGHT    &kp GRAVE
             &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C  &kp 2  &hm LC(V) V 			    &kp E       &kp E       &kp E   &to QWERTY_L &to NAV_L
                         &sk LSHIFT     &to DEFAULT  				&kp BSPC    &to NUMBER_L  
