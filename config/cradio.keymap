@@ -37,14 +37,19 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp BSPC>, <&kp LC(BSPC)>, <&kp LS(DEL)>;
+            tapping-term-ms = <130>;
+            bindings = <&kp BSPC>, <&kp LC(BSPC)>;
         };
     };
 
     combos {
         compatible = "zmk,combos";
         combo_esc { 
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+        };
+        combo_enter {
             timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
@@ -61,7 +66,7 @@
 // |    Z    |    X    |    C    |    D    |    V    |               |    K    |    H    |    ,    |    .    |    /    |
 //                               |   LSFT  |   SPC  |                |   BSPC    |  L1   |
         bindings = <
-        &hm ESC Q 	&kp W           &kp F       &kp P   	&kp B 				&kp J   &kp L   	&kp U       	&kp Y			&hm SQT SEMICOLON
+        &hm ESC Q 	&kp W           &kp F       &kp P   	&kp B 				&kp J   &kp L   	&kp U       	&kp Y			&hm SEMICOLON SQT
         &hm TAB A	&hm LCTRL  R    &kp S       &kp T       &kp G 			    &kp M   &kp N       &kp E       	&kp I   		&kp O
         &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C &kp D   	&hm LC(V) V         &kp K   &kp H   	&hm SLASH CMMA	&hm EXCL DOT 	&hm ENTER QMARK
                                         &sk LSHIFT     &kp SPC  				    &td0    &to NUMBER_L  
@@ -75,7 +80,7 @@
 // |    Z    |    X    |    C    |    E    |    E    |               |    MINUS|    '    |    ""   |    L3   |    L2   |
 //                               |   LSFT  |   L0    |               |   BSPC |  L1   |
             bindings = <
-            &kp ESC    &kp TILDE    &kp E       &kp E       &kp E	                &kp LPRN    &kp RPRN    &kp EQUAL   &kp GT              &hm LC(BSPC) LCTRL
+            &kp ESC    &kp TILDE    &kp E       &kp E       &kp E	                &kp LPRN    &kp RPRN    &kp EQUAL   &kp GT              &kp LS(DEL)
             &kp N4     &kp N2       &kp N3      &kp N1      &kp N5  		        &kp N6      &kp N7      &kp N8      &kp N9              &kp N0 
             &kp LC(Z) &kp LC(X)     &kp LC(C)    &kp E       &kp LC(V) 		    &kp MINUS    &kp SQT    &kp DOUBLE_QUOTES       &to QWERTY_L  &to NAV_L
                                         &sk LSHIFT     &to DEFAULT  				    &kp BSPC    &to NUMBER_L   
