@@ -110,7 +110,7 @@
             bindings = <
             &kp Q  &kp W &kp E  &kp R  &kp T    			&kp Y    &kp U     &kp O   &kp O    &kp P 
             &kp A  &kp S &kp D  &kp F  &kp G    		    &kp H    &kp J    &kp K  &kp L   &kp SEMI
-             &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C  &hm LC(V) V  &kp B 			    &kp N       &kp M       &kp COMMA   &kp DOT       &kp FSLH
+             &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C  &hm LC(V) V  &kp B 			    &kp N       &kp M       &kp COMMA   &kp DOT       &hm ENTER QMARK
                         &sk LSHIFT    &kp SPC   				&kp BSPC    &to NUMBER_L  
             >;
         };  
