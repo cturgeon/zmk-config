@@ -94,7 +94,7 @@
 // |    Z    |    X    |    C    |    2    |    V    |               |    E    |    E    |    E    |    L3   |    L2   |
 //                               |   LSFT  |   L0    |               |   BSPC |    L1   |
             bindings = <
-            &kp LALT  &kp TAB &kp LC(LA(LG(1)))  &kp LC(LA(LG(2)))  &bt BT_NXT    			&hm LC(HOME) HOME    &hm LC(END) END     &kp PG_UP   &kp PG_UP     &hm LC(BSPC) LCTRL 
+            &kp LALT  &kp TAB &kp LC(LA(LG(1)))  &kp LC(LA(LG(2)))  &bt BT_NXT    			&hm LC(HOME) HOME    &hm LC(END) END     &kp PG_UP   &kp PG_UP     &kp LS(DEL) 
             &kp LC(LA(LEFT))  &kp LC(LA(DOWN)) &kp LC(LA(RIGHT))  &kp 2  &kp 2    		    &kp LEFT    &kp DOWN    &kp UP  &kp RIGHT    &kp GRAVE
             &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C  &kp 2  &hm LC(V) V 			    &kp E       &kp E       &kp E   &to QWERTY_L &to NAV_L
                         &sk LSHIFT     &to DEFAULT  				&kp BSPC    &to NUMBER_L  
