@@ -83,7 +83,7 @@
             &kp ESC    &kp TILDE    &kp E       &kp E       &kp E	                &kp LPRN    &kp RPRN    &kp EQUAL   &kp GT              &kp LS(DEL)
             &kp N4     &kp N2       &kp N3      &kp N1      &kp N5  		        &kp N6      &kp N7      &kp N8      &kp N9              &kp N0 
             &kp LC(Z) &kp LC(X)     &kp LC(C)    &kp E       &kp LC(V) 		    &kp MINUS    &kp SQT    &kp DOUBLE_QUOTES       &to QWERTY_L  &to NAV_L
-                                        &sk LSHIFT     &to DEFAULT  				    &kp BSPC    &to NUMBER_L   
+                                        &sk LSHIFT     &to DEFAULT  				    &td0     &to NUMBER_L   
             >;
 		};
 		 
@@ -94,10 +94,10 @@
 // |    Z    |    X    |    C    |    2    |    V    |               |    E    |    E    |    E    |    L3   |    L2   |
 //                               |   LSFT  |   L0    |               |   BSPC |    L1   |
             bindings = <
-            &kp LALT  &kp TAB &kp LC(LA(LG(1)))  &kp LC(LA(LG(2)))  &bt BT_NXT    			&hm LC(HOME) HOME    &hm LC(END) END     &kp PG_UP   &kp PG_UP     &kp LS(DEL) 
+            &kp LALT  &kp TAB &kp e  &kp e  &bt BT_NXT    			&hm LC(HOME) HOME    &hm LC(END) END     &kp PG_UP   &kp PG_DN     &kp LS(DEL) 
             &kp LC(LA(LEFT))  &kp LC(LA(DOWN)) &kp LC(LA(RIGHT))  &kp 2  &kp 2    		    &kp LEFT    &kp DOWN    &kp UP  &kp RIGHT    &kp GRAVE
             &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C  &kp 2  &hm LC(V) V 			    &kp E       &kp E       &kp E   &to QWERTY_L &to NAV_L
-                        &sk LSHIFT     &to DEFAULT  				&kp BSPC    &to NUMBER_L  
+                        &sk LSHIFT     &to DEFAULT  				&td0    &to NUMBER_L  
             >;
 		};  
 
@@ -111,7 +111,7 @@
             &kp Q  &kp W &kp E  &kp R  &kp T    			&kp Y    &kp U     &kp O   &kp O    &kp P 
             &kp A  &kp S &kp D  &kp F  &kp G    		    &kp H    &kp J    &kp K  &kp L   &kp SEMI
              &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C  &hm LC(V) V  &kp B 			    &kp N       &kp M       &kp COMMA   &kp DOT       &hm ENTER QMARK
-                        &sk LSHIFT    &kp SPC   				&kp BSPC    &to NUMBER_L  
+                        &sk LSHIFT    &kp SPC   				&td0     &to NUMBER_L  
             >;
         };  
 	};
