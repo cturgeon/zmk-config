@@ -74,7 +74,7 @@
         &hm ESC Q 	&hm LCTRL W     &hm LALT F  &hm LSHIFT P   	&kp B           &kp J       &hm LSHIFT L   	&hm LALT U       	&hm LCTRL Y     &hm SEMICOLON SQT
         &hm TAB A	&kp R           &kp S       &kp T           &kp G 		    &hm CLCK M  &kp N           &kp E       	    &kp I           &kp O
         &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C &hm LWIN D   	&hm LC(V) V     &kp K       &hm LWIN H   	&hm SLASH CMMA	    &hm MINUS DOT 	&hm ENTER QMARK
-                                            &mo NAV_L     &kp SPC  				    &td0    &to NUMBER_L  
+                                            &mo NAV_L     &kp SPC  				    &td0    &mo NUMBER_L  
             >;
 		};
 
@@ -100,7 +100,7 @@
 //                               |   LSFT  |   L0    |               |   BSPC |    L1   |
             bindings = <
             &kp LALT  &kp TAB &kp E  &kp E  &bt BT_NXT    			&hm LC(HOME) HOME    &hm LC(END) END     &kp PG_UP   &kp PG_DN     &kp LS(DEL) 
-            &kp LC(LA(LEFT))  &kp LC(LA(DOWN)) &kp LC(LA(RIGHT))  &kp 2  &kp 2    		    &kp LEFT    &kp DOWN    &kp UP  &kp RIGHT    &kp GRAVE
+            &kp LC(LA(LEFT))  &kp LC(LA(DOWN)) &kp LC(LA(RIGHT))  &kp LA(SEMICOLON)  &kp 2    		    &kp LEFT    &kp DOWN    &kp UP  &kp RIGHT    &kp GRAVE
             &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C  &kp 2  &hm LC(V) V 			    &kp E       &kp E       &kp E   &to QWERTY_L &to NAV_L
                         &sk LSHIFT     &to DEFAULT  				 &td0    &to NUMBER_L  
             >;
