@@ -67,9 +67,9 @@
 //                               |   LSFT  |   SPC  |                |   BSPC    |  L1   |
         bindings = <
         &hm ESC Q 	&kp W           &kp F       &kp P   	&kp B 				&kp J   &kp L   	&kp U       	&kp Y			&hm SEMICOLON SQT
-        &hm TAB A	&hm LCTRL  R    &kp S       &kp T       &kp G 			    &kp M   &kp N       &kp E       	&kp I   		&kp O
-        &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C &kp D   	&hm LC(V) V         &kp K   &kp H   	&hm SLASH CMMA	&hm MINUS DOT 	&hm ENTER QMARK
-                                        &sk LSHIFT     &kp SPC  				    &td0    &to NUMBER_L  
+        &hm TAB A	&hm LCTRL  R    &hm LALT S       &hm LSHIFT T       &kp G 			    &hm CLCK M   &hm LSHIFT N       &hm LALT E       	&hm LCTRL I   		&kp O
+        &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C &hm LWIN D   	&hm LC(V) V         &kp K   &hm LWIN H   	&hm SLASH CMMA	&hm MINUS DOT 	&hm ENTER QMARK
+                                        &mo NAV_L     &kp SPC  				    &td0    &to NUMBER_L  
             >;
 		};
 
@@ -81,7 +81,7 @@
 //                               |   LSFT  |   L0    |               |   BSPC |  L1   |
             bindings = <
             &kp ESC    &kp TILDE    &kp LCMD       &kp E       &kp E	                &kp LPRN    &kp RPRN    &kp EQUAL   &kp GT              &kp LS(DEL)
-            &kp N4     &kp N2       &kp N3      &kp N1      &kp N5  		        &kp N6      &kp N7      &kp N8      &kp N9              &kp N0 
+            &kp N1     &kp N2       &kp N3      &kp N4      &kp N5  		        &kp N6      &kp N7      &kp N8      &kp N9              &kp N0 
             &kp LC(Z) &kp LC(X)     &kp LC(C)    &kp E       &kp LC(V) 		    &kp MINUS    &kp SQT    &hm SLASH CMMA       &to QWERTY_L  &to NAV_L
                                         &sk LSHIFT     &to DEFAULT  				     &td0   &to NUMBER_L   
             >;
