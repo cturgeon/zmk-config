@@ -66,10 +66,10 @@
 // |    Z    |    X    |    C    |    D    |    V    |               |    K    |    H    |    ,    |    .    |    /    |
 //                               |   LSFT  |   SPC  |                |   BSPC    |  L1   |
         bindings = <
-        &hm ESC Q 	&kp W           &kp F       &kp P   	&kp B 				&kp J   &kp L   	&kp U       	&kp Y			&hm SEMICOLON SQT
-        &hm TAB A	&hm LCTRL  R    &hm LALT S       &hm LSHIFT T       &kp G 			    &hm CLCK M   &hm LSHIFT N       &hm LALT E       	&hm LCTRL I   		&kp O
-        &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C &hm LWIN D   	&hm LC(V) V         &kp K   &hm LWIN H   	&hm SLASH CMMA	&hm MINUS DOT 	&hm ENTER QMARK
-                                        &mo NAV_L     &kp SPC  				    &td0    &to NUMBER_L  
+        &hm ESC Q 	&hm LCTRL W     &hm LALT F  &hm LSHIFT P   	&kp B           &kp J       &hm LSHIFT L   	&hm LALT U       	&hm LCTRL Y     &hm SEMICOLON SQT
+        &hm TAB A	&kp R           &kp S       &kp T           &kp G 		    &hm CLCK M  &kp N           &kp E       	    &kp I           &kp O
+        &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C &hm LWIN D   	&hm LC(V) V     &kp K       &hm LWIN H   	&hm SLASH CMMA	    &hm MINUS DOT 	&hm ENTER QMARK
+                                            &mo NAV_L     &kp SPC  				    &td0    &to NUMBER_L  
             >;
 		};
 
