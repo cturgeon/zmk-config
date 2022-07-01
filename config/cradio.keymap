@@ -20,6 +20,11 @@
    // tapping_term_ms = <200>;
 };
 
+&sk {
+    release-after-ms = <2000>;
+    quick-release;
+};
+
 / { 
 
     behaviors {
