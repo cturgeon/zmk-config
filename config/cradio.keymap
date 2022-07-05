@@ -85,7 +85,7 @@
 // |    Z    |    X    |    C    |    E    |    E    |               |    MINUS|    '    |    ""   |    L3   |    L2   |
 //                               |   LSFT  |   L0    |               |   BSPC |  L1   |
             bindings = <
-            &kp ESC    &kp TILDE    &kp LWIN       &hm LEFT_BRACE  RIGHT_BRACE      &hm LEFT_BRACKET RIGHT_BRACKET              &kp LPRN    &kp RPRN    &kp EQUAL   &kp GT              &kp LS(DEL)
+            &kp ESC    &kp TILDE    &kp LWIN       &hm LEFT_BRACE  RIGHT_BRACE      &hm LEFT_BRACKET RIGHT_BRACKET           &hm LSHIFT LPRN    &hm LALT RPRN    &hm LCTRL EQUAL   &kp GT              &kp LS(DEL)
             &kp N1     &kp N2       &kp N3      &kp N4      &kp N5  		        &kp N6      &kp N7      &kp N8      &kp N9              &kp N0 
             &kp LC(Z) &kp LC(X)     &kp LC(C)    &kp E      &kp LC(V) 		    &kp MINUS    &kp SQT    &hm SLASH CMMA       &to QWERTY_L  &to NAV_L
                                         &sk LSHIFT     &to DEFAULT  				     &td0   &to NUMBER_L   
@@ -99,7 +99,7 @@
 // |    Z    |    X    |    C    |    2    |    V    |               |    E    |    E    |    E    |    L3   |    L2   |
 //                               |   LSFT  |   L0    |               |   BSPC |    L1   |
             bindings = <
-            &kp LALT  &kp TAB &kp E  &kp E  &bt BT_NXT    			&hm LC(HOME) HOME    &hm LC(END) END     &kp PG_UP   &kp PG_DN     &kp LS(DEL) 
+            &kp LALT 	&hm LCTRL TAB &hm LALT E &hm LSHIFT E  &bt BT_NXT    			&hm LC(HOME) HOME    &hm LC(END) END     &kp PG_UP   &kp PG_DN     &kp LS(DEL) 
             &kp LC(LA(LEFT))  &kp LC(LA(DOWN)) &kp LC(LA(RIGHT))  &kp LA(SEMICOLON)  &kp 2    		    &kp LEFT    &kp DOWN    &kp UP  &kp RIGHT    &kp GRAVE
             &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C  &kp 2  &hm LC(V) V 			    &kp E       &kp E       &kp E   &to QWERTY_L &to NAV_L
                         &sk LSHIFT     &to DEFAULT  				 &td0    &to NUMBER_L  
