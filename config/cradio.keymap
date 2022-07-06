@@ -99,7 +99,7 @@
 // |    Z    |    X    |    C    |    2    |    V    |               |    E    |    E    |    E    |    L3   |    L2   |
 //                               |   LSFT  |   L0    |               |   BSPC |    L1   |
             bindings = <
-            &kp LALT 	&hm LCTRL TAB &hm LALT E &hm LSHIFT E  &bt BT_NXT    			&hm LC(HOME) HOME    &hm LC(END) END     &kp PG_UP   &kp PG_DN     &kp LS(DEL) 
+            &kp LALT 	&hm LCTRL TAB &hm LALT E &hm LSHIFT E  &bt BT_CLR    			&hm LC(HOME) HOME    &hm LC(END) END     &kp PG_UP   &kp PG_DN     &kp LS(DEL) 
             &kp LC(LA(LEFT))  &kp LC(LA(DOWN)) &kp LC(LA(RIGHT))  &kp LA(SEMICOLON)  &kp 2    		    &kp LEFT    &kp DOWN    &kp UP  &kp RIGHT    &kp GRAVE
             &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C  &kp 2  &hm LC(V) V 			    &kp E       &kp E       &kp E   &to QWERTY_L &to NAV_L
                         &sk LSHIFT     &to DEFAULT  				 &td0    &to NUMBER_L  
