@@ -71,7 +71,7 @@
 // |    Z    |    X    |    C    |    D    |    V    |               |    K    |    H    |    ,    |    .    |    /    |
 //                               |   LSFT  |   SPC  |                |   BSPC    |  L1   |
         bindings = <
-        &hm ESC Q 	&hm LCTRL W     &hm LALT F  &hm LSHIFT P   	&kp B           &kp J       &hm LSHIFT L   	&hm LALT U       	&hm LCTRL Y     &hm SEMICOLON SQT
+        &hm ESC Q 	&hm LCTRL W     &hm LSHIFT F &hm LALT P   	&kp B           &kp J       &hm LALT L   	&hm LSHIFT U       	&hm LCTRL Y     &hm SEMICOLON SQT
         &hm TAB A	&kp R           &kp S       &kp T           &kp G 		    &hm CLCK M  &kp N           &kp E       	    &kp I           &kp O
         &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C &hm LWIN D   	&hm LC(V) V     &kp K       &hm LWIN H   	&hm SLASH CMMA	    &hm MINUS DOT 	&hm ENTER QMARK
                                             &mo NAV_L     &kp SPC  				    &td0    &mo NUMBER_L  
@@ -85,7 +85,7 @@
 // |    Z    |    X    |    C    |    E    |    E    |               |    MINUS|    '    |    ""   |    L3   |    L2   |
 //                               |   LSFT  |   L0    |               |   BSPC |  L1   |
             bindings = <
-            &kp ESC    &hm LCTRL TILDE    &hm LALT LEFT_BRACE       &hm LSHIFT  RIGHT_BRACE      &hm  RIGHT_BRACKET LEFT_BRACKET          &hm LSHIFT LPRN    &hm LSHIFT RPRN    &hm LALT EQUAL   &hm LCTRL GT              &kp LS(DEL)
+            &kp ESC    &hm LCTRL TILDE    &hm LSHIFT LEFT_BRACE       &hm LALT  RIGHT_BRACE      &hm  RIGHT_BRACKET LEFT_BRACKET          &hm LSHIFT LPRN    &hm LALT RPRN    &hm LSHIFT EQUAL   &hm LCTRL GT              &kp LS(DEL)
             &kp N1     &kp N2       &kp N3      &kp N4      &kp N5  		        &kp N6      &kp N7      &kp N8      &kp N9              &kp N0 
             &kp LC(Z) &kp LC(X)     &kp LC(C)    &kp LWIN      &kp LC(V) 		    &kp MINUS    &kp SQT    &hm SLASH CMMA       &to QWERTY_L  &to NAV_L
                                         &sk LSHIFT     &to DEFAULT  				     &td0   &to NUMBER_L   
@@ -99,7 +99,7 @@
 // |    Z    |    X    |    C    |    2    |    V    |               |    E    |    E    |    E    |    L3   |    L2   |
 //                               |   LSFT  |   L0    |               |   BSPC |    L1   |
             bindings = <
-            &kp LALT 	&hm LCTRL TAB &kp LALT  &kp LSHIFT   &kp E    			&hm LC(HOME) HOME    &hm LC(END) END     &kp PG_UP   &kp PG_DN     &kp LS(DEL) 
+            &kp LALT 	&hm LCTRL TAB &kp LSHIFT  &kp LALT   &kp E    			&hm LC(HOME) HOME    &hm LC(END) END     &kp PG_UP   &kp PG_DN     &kp LS(DEL) 
             &kp LC(LA(LEFT))  &kp LC(LA(DOWN)) &kp LC(LA(RIGHT))  &kp LA(SEMICOLON)  &kp 2    		    &kp LEFT    &kp DOWN    &kp UP  &kp RIGHT    &kp GRAVE
             &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C  &kp LWIN   &hm LC(V) V 			   &bt BT_CLR       &kp E       &kp E   &to QWERTY_L &to NAV_L
                         &sk LSHIFT     &to DEFAULT  				 &td0    &to NUMBER_L  
