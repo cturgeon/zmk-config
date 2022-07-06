@@ -99,7 +99,7 @@
 // |    Z    |    X    |    C    |    2    |    V    |               |    E    |    E    |    E    |    L3   |    L2   |
 //                               |   LSFT  |   L0    |               |   BSPC |    L1   |
             bindings = <
-            &kp LALT 	&hm LCTRL TAB &kp LSHIFT  &kp LALT   &kp E    			&hm LC(HOME) HOME    &hm LC(END) END     &kp PG_UP   &kp PG_DN     &kp LS(DEL) 
+            &kp LALT 	&hm LCTRL TAB &kp LSHIFT  &kp LALT   &kp DEL    			&hm LC(HOME) HOME    &hm LC(END) END     &kp PG_UP   &kp PG_DN     &kp LS(DEL) 
             &kp LC(LA(LEFT))  &kp LC(LA(DOWN)) &kp LC(LA(RIGHT))  &kp LA(SEMICOLON)  &kp 2    		    &kp LEFT    &kp DOWN    &kp UP  &kp RIGHT    &kp GRAVE
             &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C  &kp LWIN   &hm LC(V) V 			   &bt BT_CLR       &kp E       &kp E   &to QWERTY_L &to NAV_L
                         &sk LSHIFT     &to DEFAULT  				 &td0    &to NUMBER_L  
@@ -113,7 +113,7 @@
 // |    2    |    2    |    2    |    2    |    2    |               |    N    |    M    |    ,    |   .    |    /   |
 //                               |   LSFT  |   L0    |               |   BSPC |    L1   |
             bindings = <
-            &kp Q  &kp W &kp E  &kp R  &kp T    			&kp Y    &kp U     &kp O   &kp O    &kp P 
+            &kp Q  &kp W &kp E  &kp R  &kp T    			&kp Y    &kp U    &kp I   &kp O    &kp P 
             &kp A  &kp S &kp D  &kp F  &kp G    		    &kp H    &kp J    &kp K  &kp L   &kp SEMI
              &hm LC(Z) Z &hm LC(X) X     &hm LC(C) C  &hm LC(V) V  &kp B 			    &kp N       &kp M       &kp COMMA   &kp DOT       &hm ENTER QMARK
                         &sk LSHIFT    &kp SPC   				 &td0    &to NUMBER_L  
