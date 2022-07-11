@@ -68,7 +68,7 @@
             &hm ESC Q 	&kp W           &kp F       &kp P   	    &kp B                   &kp J           &kp L   	    &kp U           &kp Y           &hm SEMICOLON SQT
             &hm TAB A	&kp R           &kp S       &kp T           &kp G 		            &hm CLCK M      &kp N           &kp E           &kp I           &kp O
             &kp Z       &hm LCTRL X     &hm LALT C  &hm LSHIFT D   	&hm LWIN V              &hm LWIN K       &hm LSHIFT H   &hm LALT CMMA   &hm LCTRL DOT 	&hm ENTER QMARK
-                                                &mo NUMBER_L      &kp SPC  				    &td0    &mo  NAV_L
+                                                &mo NAV_L      &kp SPC  				    &td0    &mo  NUMBER_L
             >;
 		};
 
