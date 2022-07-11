@@ -63,26 +63,16 @@
         keymap {
                 compatible = "zmk,keymap";
                 
-       		default_layer {
-// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    Q    |    W    |    F    |    P    |    B    |               |    J    |    L    |    U    |    Y    |    LCTRL|
-// |    A    |    R    |    S    |    T    |    G    |               |    M    |    N    |    E    |    I    |    O    |
-// |    Z    |    X    |    C    |    D    |    V    |               |    K    |    H    |    ,    |    .    |    /    |
-//                               |   LSFT  |   SPC  |                |   BSPC    |  L1   |
-        bindings = <
-        &hm ESC Q 	&kp W           &kp F       &kp P   	    &kp B                  &kp J       &kp L   	    &kp U       	    &kp Y           &hm SEMICOLON SQT
-        &hm TAB A	&kp R           &kp S       &kp T           &kp G 		            &hm CLCK M  &kp N           &kp E       	    &kp I           &kp O
-        &kp Z       &hm LCTRL X     &hm LALT C  &hm LSHIFT D   	&hm LWIN V               &hm LWIN K       &hm LSHIFT H   	&hm LALT CMMA	    &hm LCTRL DOT 	&hm ENTER QMARK
-                                            &mo NUMBER_L      &kp SPC  				    &td0    &mo  NAV_L
+        default_layer {
+            bindings = <
+            &hm ESC Q 	&kp W           &kp F       &kp P   	    &kp B                   &kp J           &kp L   	    &kp U           &kp Y           &hm SEMICOLON SQT
+            &hm TAB A	&kp R           &kp S       &kp T           &kp G 		            &hm CLCK M      &kp N           &kp E           &kp I           &kp O
+            &kp Z       &hm LCTRL X     &hm LALT C  &hm LSHIFT D   	&hm LWIN V              &hm LWIN K       &hm LSHIFT H   &hm LALT CMMA   &hm LCTRL DOT 	&hm ENTER QMARK
+                                                &mo NUMBER_L      &kp SPC  				    &td0    &mo  NAV_L
             >;
 		};
 
         numbers_layer {
-// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |   ESC   |    ~    |    E    |    E    |    E    |               |    (    |    )    |    =    |    >    | LCTRL   |
-// |    4    |    2    |    3    |    1    |    5    |               |    6    |    0    |    8    |    9    |    7    |
-// |    Z    |    X    |    C    |    E    |    E    |               |    MINUS|    '    |    ""   |    L3   |    L2   |
-//                               |   LSFT  |   L0    |               |   BSPC |  L1   |
             bindings = <
             &kp ESC     &kp BSLH       &kp LPAR        &kp RPAR       &kp EQUAL                           &kp ASTRK    &kp N7         &kp N8          &kp N9          &kp DEL
             &kp TILDE       &kp LT       &kp LBKT       &kp RBKT       &kp GT                              &kp EQUAL    &kp N4         &kp N5          &kp N6          &kp N0 
@@ -92,15 +82,10 @@
 		};
 		 
 		nav_layer {
-// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    ALT   |    TAB    |    2    |    2    |    BT   |               |    HOME |    END  |    PG_UP    |    2    |    2    |
-// |    Spotify(L)    |    Spotify(D)    |    Spotify(R)    |    2    |    2    |               |    LEFT |    DOWN |    UP   | RIGHT   |  GRAVE  |
-// |    Z    |    X    |    C    |    2    |    V    |               |    E    |    E    |    E    |    L3   |    L2   |
-//                               |   LSFT  |   L0    |               |   BSPC |    L1   |
             bindings = <
-            &kp LALT 	        &kp TAB             &kp R          &kp R            &kp DEL    			            &kp HOME    &kp PG_DN   &kp PG_UP    &kp END    &kp DEL 
-            &kp LC(LA(LEFT))    &kp LC(LA(DOWN))    &kp LC(LA(RIGHT))   &kp LA(SEMICOLON)   &kp 2    		        &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT           &kp GRAVE
-            &kp Z               &kp LCTRL           &kp LALT            &kp LSHIFT          &kp LWIN             &bt BT_CLR  &kp E       &kp E       &kp E               &kp ENTER
+            &kp LALT 	        &kp TAB             &kp R          &kp R                    &kp DEL    			            &kp HOME    &kp PG_DN   &kp PG_UP    &kp END    &kp DEL 
+            &kp LC(LA(LEFT))    &kp LC(LA(DOWN))    &kp LC(LA(RIGHT))   &kp LA(SEMICOLON)   &kp 2                           &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT           &kp GRAVE
+            &kp Z               &kp LCTRL           &kp LALT            &kp LSHIFT          &kp LWIN                        &bt BT_CLR  &kp E       &kp E       &kp E               &kp ENTER
                                                                            &to NUMBER_L     &to DEFAULT  				 &td0    &to NAV_L  
             >;
 		};  
