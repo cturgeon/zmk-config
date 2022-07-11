@@ -76,7 +76,7 @@
             bindings = <
             &kp ESC     &kp BSLH       &kp LPAR        &kp RPAR       &kp EQUAL                           &kp ASTRK    &kp N7         &kp N8          &kp N9          &kp DEL
             &kp TILDE       &kp LT       &kp LBKT       &kp RBKT       &kp GT                              &kp EQUAL    &kp N4         &kp N5          &kp N6          &kp N0 
-            &kp A       &kp LCTRL   &kp LALT        &kp  LSHIFT     &kp LWIN                           &kp MINUS    &hm LSHIFT N1   &hm LALT N2    &hm LCTRL N3    &hm ENTER SLASH
+            &kp  GRAVE      &kp LCTRL   &kp LALT        &kp  LSHIFT     &kp LWIN                           &kp MINUS    &hm LSHIFT N1   &hm LALT N2    &hm LCTRL N3    &hm ENTER SLASH
                                         &to NUMBER_L     &to DEFAULT  				                    &td0   &to NAV_L   
             >;
 		};
