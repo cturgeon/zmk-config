@@ -66,25 +66,25 @@
         default_layer {
             bindings = <
             &hm ESC Q 	&kp W           &kp F       &kp P   	    &kp B                   &kp J           &kp L   	    &kp U           &kp Y           &hm SEMICOLON SQT
-            &hm TAB A	&kp R           &kp S       &kp T           &kp G 		            &hm CLCK M      &kp N           &kp E           &kp I           &kp O
-            &hm LSHIFT Z       &hm LCTRL X     &hm LALT C  &hm LSHIFT D   	&hm LWIN V              &hm LWIN K       &hm LSHIFT H   &hm LALT CMMA   &hm LCTRL DOT 	&hm ENTER QMARK
+            &kp A	    &kp R           &kp S       &kp T           &kp G 		            &hm CLCK M      &kp N           &kp E           &kp I           &kp O
+            &hm LSHIFT Z       &hm LCTRL X     &hm LALT C  &kp D   	&hm LWIN V              &hm LWIN K       &hm LSHIFT H   &hm LALT CMMA   &hm LCTRL DOT 	&hm ENTER QMARK
                                                 &mo NAV_L      &kp SPC  				    &td0    &mo  NUMBER_L
             >;
 		};
 
         numbers_layer {
             bindings = <
-            &kp ESC     &kp BSLH       &kp LPAR        &kp RPAR       &kp EQUAL                           &kp ASTRK    &kp N7         &kp N8          &kp N9          &kp DEL
-            &kp TILDE       &kp LT       &kp LBKT       &kp RBKT       &kp GT                              &kp EQUAL    &kp N4         &kp N5          &kp N6          &kp N0 
-            &kp  GRAVE      &hm LCTRL LC(X)   &hm LALT LC(C)       &kp  LSHIFT     &hm LWIN  LC(V)                         &kp MINUS    &hm LSHIFT N1   &hm LALT N2    &hm LCTRL N3    &hm ENTER SLASH
+            &kp ESC     &kp BSLH       &kp LPAR        &kp RPAR       &kp EQUAL                           &kp GRAVE    &kp N7         &kp N8          &kp N9          &kp DEL
+            &kp TAB     &kp LT          &kp LBKT       &kp RBKT       &kp GT                              &kp MINUS    &kp N4         &kp N5          &kp N6          &kp N0 
+            &hm LSHIFT   &hm LCTRL LC(X)   &hm LALT LC(C)       &kp  SLASH     &hm LWIN  LC(V)                         &kp SLASH    &hm LSHIFT N1   &hm LALT N2    &hm LCTRL N3    &kp ENTER 
                                         &to NUMBER_L     &to DEFAULT  				                    &td0   &to NAV_L   
             >;
 		};
 		 
 		nav_layer {
             bindings = <
-            &kp LALT 	        &kp TAB             &kp R          &kp R                    &kp DEL    			            &kp HOME    &kp PG_DN   &kp PG_UP    &kp END    &kp DEL 
-            &kp LC(LA(LEFT))    &kp LC(LA(DOWN))    &kp LC(LA(RIGHT))   &kp LA(SEMICOLON)   &kp 2                           &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT           &kp GRAVE
+            &kp LALT 	        &kp TAB             &kp R          &kp GRAVE                    &kp SLASH    			            &kp HOME    &kp PG_DN   &kp PG_UP    &kp END    &kp DEL 
+            &kp LC(LA(LEFT))    &kp LC(LA(DOWN))    &kp LC(LA(RIGHT))   &kp LA(SEMICOLON)   &kp 2                           &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT           &kp SEMICOLON
             &kp  LC(Z)      &hm LCTRL LC(X)   &hm LALT LC(C)       &kp  LSHIFT     &hm LWIN  LC(V)                        &bt BT_CLR  &kp E       &kp E       &kp E               &kp ENTER
                                                                            &to NUMBER_L     &to DEFAULT  				 &td0    &to NAV_L  
             >;
