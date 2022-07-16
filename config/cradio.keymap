@@ -74,9 +74,9 @@
 
         numbers_layer {
             bindings = <
-            &kp ESC     &kp BSLH       &kp LPAR        &kp RPAR       &kp EQUAL                           &kp GRAVE    &kp N7         &kp N8          &kp N9          &kp DEL
-            &kp TAB     &kp LT          &kp LBKT       &kp RBKT       &kp GT                              &kp MINUS    &kp N4         &kp N5          &kp N6          &kp N0 
-            &kp LSHIFT   &hm LCTRL LC(X)   &hm LALT LC(C)       &kp  SLASH     &hm LWIN  LC(V)                         &kp SLASH    &hm LSHIFT N1   &hm LALT N2    &hm LCTRL N3    &kp ENTER 
+            &kp ESC     &kp  TAB      &kp LPAR        &kp RPAR       &kp EQUAL                           &kp GRAVE    &kp N7         &kp N8          &kp N9          &kp DEL
+            &kp BSLH     &kp LT          &kp LBKT       &kp RBKT       &kp GT                              &kp MINUS    &kp N4         &kp N5          &kp N6          &kp N0 
+            &hm LSHIFT  LC(Z)   &hm LCTRL LC(X)   &hm LALT LC(C)       &kp  SLASH     &hm LWIN  LC(V)                         &kp SLASH    &hm LSHIFT N1   &hm LALT N2    &hm LCTRL N3    &kp ENTER 
                                         &to NUMBER_L     &to DEFAULT  				                    &td0   &to NAV_L   
             >;
 		};
@@ -85,7 +85,7 @@
             bindings = <
             &kp LALT 	        &kp TAB             &kp R          &kp GRAVE                    &kp SLASH    			            &kp HOME    &kp PG_DN   &kp PG_UP    &kp END    &kp DEL 
             &kp LC(LA(LEFT))    &kp LC(LA(DOWN))    &kp LC(LA(RIGHT))   &kp LA(SEMICOLON)   &kp 2                           &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT           &kp SEMICOLON
-            &kp  LC(Z)      &hm LCTRL LC(X)   &hm LALT LC(C)       &kp  LSHIFT     &hm LWIN  LC(V)                        &bt BT_CLR  &kp E       &kp E       &kp E               &kp ENTER
+            &hm LSHIFT  LC(Z)      &hm LCTRL LC(X)   &hm LALT LC(C)       &kp  LSHIFT     &hm LWIN  LC(V)                        &bt BT_CLR  &kp E       &kp E       &kp E               &kp ENTER
                                                                            &to NUMBER_L     &to DEFAULT  				 &td0    &to NAV_L  
             >;
 		};  
