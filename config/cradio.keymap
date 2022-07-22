@@ -56,7 +56,7 @@
         combo_enter {
             timeout-ms = <50>;
             key-positions = <1 2>;
-            bindings = <&kp SEMI>;
+            bindings = <&kp COLON>;
         };
     };
 
@@ -65,7 +65,7 @@
                 
         default_layer {
             bindings = <
-            &hm ESC Q 	&hm TAb W           &kp F       &kp P   	    &kp B                   &kp J           &kp L   	    &kp U           &kp Y           &kp SQT
+            &hm ESC Q 	&hm TAB W           &kp F       &kp P   	    &kp B                   &kp J           &kp L   	    &kp U           &kp Y           &kp SQT
             &kp A	    &kp R           &kp S       &kp T           &kp G 		            &kp M      &kp N           &kp E           &kp I           &kp O
             &hm LSHIFT Z       &hm LCTRL X     &hm LALT C  &kp D   	&hm LWIN V              &hm LWIN K       &hm LSHIFT H   &hm LALT CMMA   &hm LCTRL DOT 	&hm  ENTER SLASH
                                                 &mo NAV_L      &kp SPC  				    &td0    &mo  NUMBER_L
@@ -74,7 +74,7 @@
 
         numbers_layer {
             bindings = <
-            &kp ESC     &kp  TAB      &kp LPAR        &kp RPAR       &kp EQUAL                           &kp GRAVE    &kp N7         &kp N8          &kp N9          &kp SEMICOLON
+            &kp ESC     &kp  TAB      &kp LPAR        &kp RPAR       &kp EQUAL                           &kp GRAVE    &kp N7         &kp N8          &kp N9          &kp SEMI
             &kp BSLH     &kp LT          &kp LBKT       &kp RBKT       &kp GT                              &kp MINUS    &kp N4         &kp N5          &kp N6          &kp N0 
             &hm LSHIFT  LC(Z)   &hm LCTRL LC(X)   &hm LALT LBRC       &kp RBRC  &hm LWIN  COLON         &kp SLASH    &hm LSHIFT N1   &hm LALT N2    &hm LCTRL N3    &kp ENTER 
                                         &to NUMBER_L     &kp SPC 				                    &td0   &to NAV_L   
