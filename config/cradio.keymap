@@ -86,7 +86,7 @@
             &kp LALT 	        &kp TAB             &kp SEMI          &kp GRAVE      &kp SLASH    			            &kp HOME    &kp PG_DN   &kp PG_UP    &kp END    &kp DEL 
             &kp LC(LA(LEFT))    &kp LC(LA(DOWN))    &kp LC(LA(RIGHT))   &kp LA(SEMICOLON)   &kp CLCK                           &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT           &kp SEMICOLON 
             &hm LSHIFT  LC(Z)      &hm LCTRL LC(X)   &hm LALT LC(C)       &kp  LSHIFT     &hm LWIN  LC(V)                        &bt BT_CLR  &kp E       &kp E       &kp E               &kp ENTER
-                                                                           &to NUMBER_L     &kp SPC  				 &td0    &to NAV_L  
+                                                                           &to NUMBER_L     &kp SPC  				 &kp LC(BSPC)    &to NAV_L  
             >;
 		};  
 	};
