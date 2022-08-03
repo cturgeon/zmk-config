@@ -67,7 +67,7 @@
             bindings = <
             &hm ESC Q 	&hm TAB W           &kp F       &kp P   	    &kp B                   &kp J           &kp L   	    &kp U           &kp Y           &kp SQT
             &kp A	    &kp R           &kp S       &kp T           &kp G 		            &kp M      &kp N           &kp E           &kp I           &kp O
-            &hm LSHIFT Z       &hm LCTRL X     &hm LALT C  &kp D   	&hm LWIN V              &hm LWIN K       &hm LSHIFT H   &hm LALT CMMA   &hm LCTRL DOT 	&hm  ENTER SLASH
+            &hm LSHIFT Z       &hm LCTRL X     &hm LALT C  &kp D   	&hm LWIN V              &hm LWIN K       &hm LSHIFT H   &hm LALT CMMA   &hm LCTRL DOT 	&kp  SLASH
                                                 &mo NAV_L      &kp SPC  				    &td0    &mo  NUMBER_L
             >;
 		};
