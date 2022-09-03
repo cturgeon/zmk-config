@@ -42,7 +42,7 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <160>;
-            bindings = <&kp BSPC>, <&kp LA(BSPC)>;
+            bindings = <&kp BSPC>, <&kp LC(BSPC)>;
         };
     };
 
@@ -86,7 +86,7 @@
             &kp LALT 	        &kp TAB             &kp SEMI          &kp GRAVE      &kp SLASH    			            &kp HOME    &kp PG_DN   &kp PG_UP    &kp END    &kp DEL 
             &kp LC(LA(LEFT))    &kp LC(LA(DOWN))    &kp LC(LA(RIGHT))   &kp LA(SEMICOLON)   &kp CLCK                           &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT           &kp SEMICOLON
             &hm LSHIFT  LG(Z)      &hm LWIN LG(X)   &hm LCTRL LG(C)       &hm LALT  TAB     &kp LG(V)                        &bt BT_CLR  &kp RALT       &kp RCTRL       &kp RWIN               &hm RSHIFT ENTER
-                                                                           &to NUMBER_L     &kp SPC  				 &kp LA(BSPC)    &to NAV_L  
+                                                                           &to NUMBER_L     &kp SPC  				 &kp LC(BSPC)    &to NAV_L  
             >;
 		};  
 	};
