@@ -53,10 +53,15 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
-        combo_enter {
+        combo_colon {
             timeout-ms = <50>;
             key-positions = <1 2>;
             bindings = <&kp COLON>;
+        };
+        combo_enter { 
+            timeout-ms = <50>;
+            key-positions = <18 19>;
+            bindings = <&kp ENTER>;
         };
     };
 
@@ -66,8 +71,8 @@
         default_layer {
             bindings = <
             &kp  Q 	&kp W           &kp F       &kp P   	    &kp B                   &kp J           &kp L   	    &kp U           &kp Y           &kp SQT
-            &kp A	    &kp R           &kp S       &kp T           &kp G 		            &kp M      &kp N           &kp E           &kp I           &kp O
-            &hm LSHIFT Z       &hm LWIN X     &hm LCTRL C  &hm LALT D   	&kp V              &kp K       &hm RALT H   &hm RCTRL CMMA   &hm RWIN DOT 	&hm RSHIFT  SLASH
+            &hm LSHIFT A	    &kp R           &kp S       &kp T           &kp G 		            &kp M      &kp N           &kp E           &kp I           &hm RSHIFT O
+            &hm LCTRL Z       &hm LWIN X     &hm LCTRL C  &hm LALT D   	&kp V              &kp K       &hm RALT H   &hm RCTRL CMMA   &hm RWIN DOT 	&hm RCTRL  SLASH
                                                 &mo NAV_L      &kp SPC  				    &td0    &mo  NUMBER_L
             >;
 		};
@@ -85,7 +90,7 @@
             bindings = <
             &kp LALT 	        &kp TAB             &kp SEMI          &kp GRAVE      &kp SLASH    			            &kp HOME    &kp PG_DN   &kp PG_UP    &kp END    &kp DEL 
             &kp LC(LA(LEFT))    &kp LC(LA(DOWN))    &kp LC(LA(RIGHT))   &kp LA(SEMICOLON)   &kp CLCK                           &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT           &kp SEMICOLON
-            &hm LSHIFT  LG(Z)      &hm LWIN LG(X)   &hm LCTRL LG(C)       &hm LALT  TAB     &kp LG(V)                        &bt BT_CLR  &kp RALT       &kp RCTRL       &kp RWIN               &hm RSHIFT ENTER
+            &hm LSHIFT  LC(Z)      &hm LWIN LC(X)   &hm LCTRL LC(C)       &hm LALT  TAB     &kp LC(V)                        &bt BT_CLR  &kp RALT       &kp RCTRL       &kp RWIN               &hm RSHIFT ENTER
                                                                            &to NUMBER_L     &kp SPC  				 &kp LC(BSPC)    &to NAV_L  
             >;
 		};  
