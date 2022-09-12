@@ -42,7 +42,7 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <160>;
-            bindings = <&kp BSPC>, <&kp LC(BSPC)>;
+            bindings = <&kp BSPC>, <&kp LG(BSPC)>;
         };
     };
 
@@ -80,8 +80,8 @@
         numbers_layer {
             bindings = <
             &kp ESC     &kp  TAB      &kp LPAR        &kp RPAR       &kp EQUAL                           &kp GRAVE    &kp N7         &kp N8          &kp N9          &kp SEMI
-            &kp BSLH     &kp LT          &kp LBKT       &kp RBKT       &kp GT                              &kp MINUS    &kp N4         &kp N5          &kp N6          &kp N0 
-            &hm LSHIFT  LG(Z)   &kp LWIN   &hm LCTRL LBRC       &hm LALT RBRC  &hm LWIN  COLON         &kp SLASH    &hm RALT N1   &hm RCTRL N2    &hm RWIN N3    &hm RSHIFT ENTER 
+            &hm LSHIFT BSLH     &kp LT          &kp LBKT       &kp RBKT       &kp GT                              &kp MINUS    &kp N4         &kp N5          &kp N6          &hm RSHIFT N0 
+            &hm LCTRL  LG(Z)   &kp LWIN   &hm LCTRL LBRC       &hm LALT RBRC  &hm LWIN  COLON         &kp SLASH    &hm RALT N1   &hm RCTRL N2    &hm RWIN N3    &hm RCTRL ENTER 
                                         &to NUMBER_L     &kp SPC 				                    &td0   &to NAV_L   
             >;
 		};
@@ -89,9 +89,9 @@
 		nav_layer {
             bindings = <
             &kp LALT 	        &kp TAB             &kp SEMI          &kp GRAVE      &kp SLASH    			            &kp HOME    &kp PG_DN   &kp PG_UP    &kp END    &kp DEL 
-            &kp LC(LA(LEFT))    &kp LC(LA(DOWN))    &kp LC(LA(RIGHT))   &kp LA(SEMICOLON)   &kp CLCK                           &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT           &kp SEMICOLON
-            &hm LSHIFT  LC(Z)      &hm LWIN LC(X)   &hm LCTRL LC(C)       &hm LALT  TAB     &kp LC(V)                        &bt BT_CLR  &kp RALT       &kp RCTRL       &kp RWIN               &hm RSHIFT ENTER
-                                                                           &to NUMBER_L     &kp SPC  				 &kp LC(BSPC)    &to NAV_L  
+            &hm LSHIFT LC(LA(LEFT))    &kp LC(LA(DOWN))    &kp LC(LA(RIGHT))   &kp LA(SEMICOLON)   &kp CLCK                           &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT           &hm RSHIFT SEMICOLON
+            &hm LCTRL  LG(Z)      &hm LWIN LG(X)   &hm LCTRL LG(C)       &hm LALT  TAB     &kp LG(V)                        &bt BT_CLR  &kp RALT       &kp RCTRL       &kp RWIN               &hm RCTRL ENTER
+                                                                           &to NUMBER_L     &kp SPC  				 &kp LG(BSPC)    &to NAV_L  
             >;
 		};  
 	};
