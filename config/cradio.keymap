@@ -42,15 +42,15 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
-            tapping-term-ms = <160>;
-            bindings = <&kp BSPC>, <&kp LC(BSPC)>;
+            tapping-term-ms = <140>;
+            bindings = <&kp BSPC>, <&kp LA(BSPC)>;
         };
 
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_1";
             #binding-cells = <0>;
-            tapping-term-ms = <160>;
+            tapping-term-ms = <140>;
             bindings = <&kp BSPC>, <&kp LC(BSPC)>;
         };
     };
@@ -100,7 +100,7 @@
             &kp LALT 	        &kp TAB             &kp SEMI          &to WIN_L      &to DEFAULT    			            &kp HOME    &kp PG_DN   &kp PG_UP    &kp END    &kp DEL 
             &kp LC(LA(LEFT))    &kp LC(LA(DOWN))    &kp LC(LA(RIGHT))   &kp LA(SEMICOLON)   &kp CLCK                           &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT           &kp SEMICOLON
             &hm LSHIFT  LC(Z)      &hm LWIN LC(X)   &hm LCTRL LC(C)       &hm LALT  TAB     &kp LC(V)                        &bt BT_NXT  &kp RALT       &kp RCTRL       &kp RWIN               &hm RSHIFT ENTER
-                                                                           &to NUMBER_L     &kp SPC  				 &kp LC(BSPC)    &to NAV_L  
+                                                                           &to NUMBER_L     &kp SPC  				 &kp LA(BSPC)    &to NAV_L  
             >;
 		};  
         windows_layer {
