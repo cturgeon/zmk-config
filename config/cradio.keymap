@@ -12,6 +12,7 @@
 #define DEFAULT 0
 #define NUMBER_L 1
 #define NAV_L 2
+#define WIN_L 3
 
 
 &mt {
@@ -40,6 +41,14 @@
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <160>;
+            bindings = <&kp BSPC>, <&kp LC(BSPC)>;
+        };
+
+        td1: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_1";
             #binding-cells = <0>;
             tapping-term-ms = <160>;
             bindings = <&kp BSPC>, <&kp LC(BSPC)>;
@@ -88,11 +97,19 @@
 		 
 		nav_layer {
             bindings = <
-            &kp LALT 	        &kp TAB             &kp SEMI          &kp GRAVE      &kp SLASH    			            &kp HOME    &kp PG_DN   &kp PG_UP    &kp END    &kp DEL 
+            &kp LALT 	        &kp TAB             &kp SEMI          &to WIN_L      &to DEFAULT    			            &kp HOME    &kp PG_DN   &kp PG_UP    &kp END    &kp DEL 
             &kp LC(LA(LEFT))    &kp LC(LA(DOWN))    &kp LC(LA(RIGHT))   &kp LA(SEMICOLON)   &kp CLCK                           &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT           &kp SEMICOLON
-            &hm LSHIFT  LC(Z)      &hm LWIN LC(X)   &hm LCTRL LC(C)       &hm LALT  TAB     &kp LC(V)                        &bt BT_CLR  &kp RALT       &kp RCTRL       &kp RWIN               &hm RSHIFT ENTER
+            &hm LSHIFT  LC(Z)      &hm LWIN LC(X)   &hm LCTRL LC(C)       &hm LALT  TAB     &kp LC(V)                        &bt BT_NXT  &kp RALT       &kp RCTRL       &kp RWIN               &hm RSHIFT ENTER
                                                                            &to NUMBER_L     &kp SPC  				 &kp LC(BSPC)    &to NAV_L  
             >;
 		};  
+        windows_layer {
+            bindings = <
+            &kp  Q 	&kp W           &kp F       &kp P   	    &kp B                   &kp J           &kp L   	    &kp U           &kp Y           &kp SQT
+            &hm LSHIFT A	    &kp R           &kp S       &kp T           &kp G 		            &kp M      &kp N           &kp E           &kp I           &hm RSHIFT O
+            &hm LWIN Z       &hm LCTRL X     &hm LCTRL C  &hm LALT D   	&kp V              &kp K       &hm RALT H   &hm RCTRL CMMA   &hm RCTRL DOT 	&hm RWIN  SLASH
+                                                &mo NAV_L      &kp SPC  				    &td1    &mo  NUMBER_L
+            >;
+		};
 	};
 };
