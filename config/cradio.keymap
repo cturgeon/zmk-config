@@ -99,7 +99,7 @@
             bindings = <
             &kp LALT 	        &kp TAB             &kp SEMI          &to WIN_L      &to DEFAULT    			            &kp HOME    &kp PG_DN   &kp PG_UP    &kp END    &kp DEL 
             &kp LC(LA(LEFT))    &kp LC(LA(DOWN))    &kp LC(LA(RIGHT))   &kp LA(SEMICOLON)   &kp CLCK                           &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT           &kp SEMICOLON
-            &hm LSHIFT  LC(Z)      &hm LWIN LC(X)   &hm LCTRL LC(C)       &hm LALT  TAB     &kp LC(V)                        &bt BT_NXT  &kp RALT       &kp RCTRL       &kp RWIN               &hm RSHIFT ENTER
+            &hm LSHIFT  LC(Z)      &hm LWIN LC(X)   &hm LCTRL LC(C)       &hm LALT  TAB     &kp LC(V)                        &bt BT_CLR  &kp RALT       &kp RCTRL       &kp RWIN               &hm RSHIFT ENTER
                                                                            &to NUMBER_L     &kp SPC  				 &kp LA(BSPC)    &to NAV_L  
             >;
 		};  
