@@ -12,8 +12,7 @@
 #define DEFAULT 0
 #define NUMBER_L 1
 #define NAV_L 2
-#define WIN_L 3
-
+#define FKEY_L 3
 
 &mt {
   //  flavor = "tap-preferred";
@@ -30,7 +29,6 @@
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             quick-tap-ms = <200>;
@@ -40,18 +38,9 @@
 
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
             #binding-cells = <0>;
-            tapping-term-ms = <140>;
+            tapping-term-ms = <160>;
             bindings = <&kp BSPC>, <&kp LA(BSPC)>;
-        };
-
-        td1: tap_dance_1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_1";
-            #binding-cells = <0>;
-            tapping-term-ms = <140>;
-            bindings = <&kp BSPC>, <&kp LC(BSPC)>;
         };
     };
 
@@ -81,35 +70,37 @@
             bindings = <
             &kp  Q 	&kp W           &kp F       &kp P   	    &kp B                   &kp J           &kp L   	    &kp U           &kp Y           &kp SQT
             &hm LSHIFT A	    &kp R           &kp S       &kp T           &kp G 		            &kp M      &kp N           &kp E           &kp I           &hm RSHIFT O
-            &hm LCTRL Z       &hm LWIN X     &hm LCTRL C  &hm LALT D   	&kp V              &kp K       &hm RALT H   &hm RCTRL CMMA   &hm RWIN DOT 	&hm RCTRL  SLASH
-                                                &mo NAV_L      &kp SPC  				    &td0    &mo  NUMBER_L
+            &hm LCTRL Z       &hm LWIN X     &hm LCTRL C  &hm LALT D   	&kp V              &kp K       &hm RALT H   &hm RCTRL COMMA   &hm RWIN DOT 	&hm RCTRL  SLASH
+                                                &mo NAV_L      &kp SPACE  				    &td0    &mo  NUMBER_L
             >;
 		};
 
         numbers_layer {
             bindings = <
             &kp ESC     &kp  TAB      &kp LPAR        &kp RPAR       &kp EQUAL                           &kp GRAVE    &kp N7         &kp N8          &kp N9          &kp SEMI
-            &kp BSLH     &kp LT          &kp LBKT       &kp RBKT       &kp GT                              &kp MINUS    &kp N4         &kp N5          &kp N6          &kp N0 
-            &hm LSHIFT  LG(Z)   &kp LWIN   &hm LCTRL LBRC       &hm LALT RBRC  &hm LWIN  COLON         &kp SLASH    &hm RALT N1   &hm RCTRL N2    &hm RWIN N3    &hm RSHIFT ENTER 
-                                        &to NUMBER_L     &kp SPC 				                    &td0   &to NAV_L   
+            &hm LSHIFT BSLH     &kp LT          &kp LBKT       &kp RBKT       &kp GT                              &kp MINUS    &kp N4         &kp N5          &kp N6          &hm RSHIFT N0 
+            &hm LCTRL  LG(Z)   &kp LWIN   &hm LCTRL LBRC       &hm LALT RBRC  &hm LWIN  COLON         &kp SLASH    &hm RALT N1   &hm RCTRL N2    &hm RWIN N3    &hm RCTRL ENTER 
+                                        &mo FKEY_L     &kp SPACE 				                    &td0   &to NAV_L   
             >;
 		};
 		 
 		nav_layer {
             bindings = <
-            &kp LALT 	        &kp TAB             &kp SEMI          &to WIN_L      &to DEFAULT    			            &kp HOME    &kp PG_DN   &kp PG_UP    &kp END    &kp DEL 
-            &kp LC(LA(LEFT))    &kp LC(LA(DOWN))    &kp LC(LA(RIGHT))   &kp LA(SEMICOLON)   &kp CLCK                           &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT           &kp SEMICOLON
-            &hm LSHIFT  LC(Z)      &hm LWIN LC(X)   &hm LCTRL LC(C)       &hm LALT  TAB     &kp LC(V)                        &bt BT_CLR  &kp RALT       &kp RCTRL       &kp RWIN               &hm RSHIFT ENTER
-                                                                           &to NUMBER_L     &kp SPC  				 &kp LA(BSPC)    &to NAV_L  
+            &kp LALT 	        &kp TAB             &kp SEMI          &kp GRAVE      &kp CLCK    			            &kp HOME    &kp PG_DN   &kp PG_UP    &kp END    &kp DEL 
+            &hm LSHIFT BSLH    &kp LEFT             &kp DOWN        &kp UP          &kp RIGHT                        &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT           &hm RSHIFT SEMICOLON
+            &hm LCTRL  LG(Z)      &hm LWIN LG(X)   &hm LCTRL LG(C)       &hm LALT  TAB     &kp LG(V)                        &bt BT_CLR  &kp RALT       &kp RCTRL       &kp RWIN               &hm RCTRL ENTER
+                                                                           &to NUMBER_L     &kp SPACE  				 &kp LA(BSPC)    &to NAV_L  
             >;
 		};  
-        windows_layer {
+
+        fkey_layer {
             bindings = <
-            &kp  Q 	&kp W           &kp F       &kp P   	    &kp B                   &kp J           &kp L   	    &kp U           &kp Y           &kp SQT
-            &hm LSHIFT A	    &kp R           &kp S       &kp T           &kp G 		            &kp M      &kp N           &kp E           &kp I           &hm RSHIFT O
-            &hm LWIN Z       &hm LCTRL X     &hm LCTRL C  &hm LALT D   	&kp V              &kp K       &hm RALT H   &hm RCTRL CMMA   &hm RCTRL DOT 	&hm RWIN  SLASH
-                                                &mo NAV_L      &kp SPC  				    &td1    &mo  NUMBER_L
+            &kp ESC     &kp  TAB      &kp LPAR        &kp RPAR       &kp EQUAL                           &kp F12    &kp F7         &kp F8          &kp F9          &kp SEMI
+            &hm LSHIFT BSLH     &kp LT          &kp LBKT       &kp RBKT       &kp GT                              &kp F11    &kp F4         &kp F5          &kp F6          &hm RSHIFT N0 
+            &hm LCTRL  LG(Z)   &kp LWIN   &hm LCTRL LBRC       &hm LALT RBRC  &hm LWIN  COLON         &kp F10    &hm RALT F1   &hm RCTRL F2    &hm RWIN F3    &hm RCTRL ENTER 
+                                        &to DEFAULT     &kp SPACE 				                    &td0   &to NAV_L   
             >;
 		};
+
 	};
 };
