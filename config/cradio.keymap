@@ -30,7 +30,7 @@
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <200>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
@@ -91,7 +91,7 @@
             &kp ESC     &kp  TAB      &kp LPAR        &kp RPAR       &kp EQUAL                           &kp F12    &kp F7         &kp F8          &kp F9          &kp SEMI
             &hm LSHIFT BSLH     &kp LT          &kp LBKT       &kp RBKT       &kp GT                              &kp F11    &kp F4         &kp F5          &kp F6          &hm RSHIFT N0 
             &hm LCTRL  LG(Z)   &kp LWIN   &hm LCTRL LBRC       &hm LALT RBRC  &hm LWIN  COLON         &kp F10    &hm RALT F1   &hm RCTRL F2    &hm RWIN F3    &hm RCTRL ENTER 
-                                        &to DEFAULT     &kp SPACE 				                    &kp BSPC   &to NAV_L   
+                                        &to DEFAULT     &kp SPACE 				                    &kp SPACE   &to DEFAULT   
             >;
 		};
 	};
